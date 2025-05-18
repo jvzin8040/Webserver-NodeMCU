@@ -27,7 +27,7 @@ void setup() {
   Serial.println(WiFi.localIP());
 
   server.on("/", HTTP_GET, []() {
-    Serial.println("Acessando o arquivo /pagina.html");
+    Serial.println("Acessando o arquivo /index.html");
     File file = SPIFFS.open("/index.html", "r");
     
     if (file) {
