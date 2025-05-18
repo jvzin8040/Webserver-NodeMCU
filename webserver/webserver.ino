@@ -28,7 +28,7 @@ void setup() {
 
   server.on("/", HTTP_GET, []() {
     Serial.println("Acessando o arquivo /pagina.html");
-    File file = SPIFFS.open("/pagina.html", "r");
+    File file = SPIFFS.open("/index.html", "r");
     
     if (file) {
       Serial.println("Arquivo encontrado, enviando conteúdo...");
