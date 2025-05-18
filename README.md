@@ -36,6 +36,17 @@
     <li>Use <strong>Ferramentas > ESP8266 Sketch Data Upload</strong> para enviar os arquivos.</li>
 </ol>
 
+<h3>4. Configurar o Wi-Fi no arquivo config.h</h3>
+<ol>
+    <li>Abra o arquivo <strong>config.h</strong> no seu projeto.</li>
+    <li>Defina o nome da rede Wi-Fi (SSID) e a senha (PASSWORD) da sua rede:</li>
+    <pre><code>#define WIFI_SSID "Seu_SSID"
+#define WIFI_PASSWORD "Sua_Senha"
+</code></pre>
+    <li>Salve o arquivo.</li>
+    <li>Remova do nome do arquivo o trecho <strong>"(removeMe)"</strong> e renomeie para <strong>config.h</strong></li>
+</ol>
+
 <h2>✅ Testando o Projeto</h2>
 <ol>
     <li>Conecte o NodeMCU ao computador via USB.</li>
