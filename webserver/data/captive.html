@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Configurar Wi-Fi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="captiveStyle.css">
+</head>
+<body>
+  <div class="card">
+    <h3>Configurar Wi-Fi</h3>
+    <form method="POST" action="/save">
+      <div class="form-group">
+        <label for="ssid">SSID</label>
+        <input type="text" id="ssid" name="ssid" required autofocus>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Salvar</button>
+    </form>
+    <div class="info">
+      O NodeMCU irá reiniciar após salvar a nova rede.
+    </div>
+  </div>
+</body>
+</html>
